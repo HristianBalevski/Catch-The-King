@@ -1,5 +1,5 @@
 # Catch-The-King
-Catch the king is a game similar to chess but is much easier. This is a game for two players and the main goal for every player is to catch the king before the other player. First player always starts from position (0, 0) and second player always starts from position (7, 7). The king always starts from random position but keep in mind that the king is very smart and on every 5th iteration he change his position. Every player has eight possible directions and can move only 1 square.
+Catch the king is a game similar to chess but is much easier. This is a game for two players and the main goal for every player is to catch the king before the other player. First player always starts from position (0, 0) and second player always starts from position (7, 7). The king always starts from random position but keep in mind that the king is very smart and on every 5th iteration he change his position. Every player has eight possible directions and can move only 1 square. The game finish when one of the players catch the king.
 
 Possible directions:<br>
 Press 1 for Up <br>
