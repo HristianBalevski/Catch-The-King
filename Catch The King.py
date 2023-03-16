@@ -5,7 +5,7 @@ def player_choice(player):
     now_is = 'White' if player == 'W' else "Black"
     while True:
         try:
-            person = int(input(f'{now_is}, please choose a number between 1 and {8}:\n'))
+            person = int(input(f'{now_is}, please choose a number between 1 and {8}: '))
             if 1 <= person <= 8:
                 return person - 1
             else:
@@ -43,7 +43,7 @@ white_row = 0
 white_col = 0
 black_row = 7
 black_col = 7
-king_row = randint(0, size - 1)
+king_row = randint(1, size - 2)
 king_col = randint(0, size - 1)
 
 board[white_row][white_col] = 'W'
