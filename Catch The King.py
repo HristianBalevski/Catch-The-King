@@ -53,7 +53,7 @@ board[king_row][king_col] = 'K'
 current_player, second_player = 'W', 'B'
 iteration = 0
 for row in board:
-    print(row)
+    print(f"{'| '}{' | '.join(row)}{' |'}")
 
 while True:
     current_player_choice = player_choice(current_player)
@@ -70,7 +70,7 @@ while True:
             winner = "White" if current_player == "W" else "Black"
             board[next_row][next_col] = current_player
             for row in board:
-                print(row)
+                print(f"{'| '}{' | '.join(row)}{' |'}")
             print(f'The King has been captured on position ({next_row}, {next_col})! {winner} won!')
             break
 
@@ -91,7 +91,7 @@ while True:
             winner = "White" if current_player == "W" else "Black"
             board[next_row][next_col] = current_player
             for row in board:
-                print(row)
+                print(f"{'| '}{' | '.join(row)}{' |'}")
             print(f'The King has been captured on position ({next_row}, {next_col})! {winner} won!')
             break
 
@@ -113,4 +113,4 @@ while True:
         iteration = 0
 
     for row in board:
-        print(row)
+        print(f"{'| '}{' | '.join(row)}{' |'}")
