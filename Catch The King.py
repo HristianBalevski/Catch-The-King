@@ -5,7 +5,7 @@ def player_choice(player):
     now_is = 'White' if player == 'W' else "Black"
     while True:
         try:
-            person = int(input(f'{now_is}, please choose a number between 1 and {8}: '))
+            person = int(input(f'{now_is}, please choose a number between 1 and {size}: '))
             if 1 <= person <= 8:
                 return person - 1
             else:
@@ -105,12 +105,16 @@ while True:
     current_player, second_player = second_player, current_player
     iteration += 1
 
-    if iteration == 5:
+    if iteration == 20:
+        print('GAME OVER!')
+        print('The King is Saved!')
+        break
+
+    if iteration % 5 == 0:
         board[king_row][king_col] = '_'
         king_row = randint(0, size - 1)
         king_col = randint(0, size - 1)
         board[king_row][king_col] = 'K'
-        iteration = 0
 
     for row in board:
         print(f"{'| '}{' | '.join(row)}{' |'}")
