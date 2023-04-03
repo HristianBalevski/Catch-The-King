@@ -5,7 +5,7 @@ def player_choice(player):
     now_is = 'White' if player == 'W' else "Black"
     while True:
         try:
-            person = int(input(f'{now_is}, please choose a number between 1 and {size}: '))
+            person = int(input(f'{now_is}, please choose a number between 1 and {8}: '))
             if 1 <= person <= 8:
                 return person - 1
             else:
