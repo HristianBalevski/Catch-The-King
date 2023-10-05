@@ -81,7 +81,7 @@ def the_king_is_captured(board, curr_player, n_row, n_col, o_row, o_col):
     board[o_row][o_col] = '_'
     print_board(board)
     winner = 'White' if curr_player == 'W' else 'Black'
-    print(f'The King has been captured on position ({n_row}, {n_col}). {winner} wins!')
+    print(f'The King has been captured on position ({n_row}, {n_col}). {winner} won!')
 
     return winner
 
