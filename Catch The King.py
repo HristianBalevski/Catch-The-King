@@ -52,19 +52,16 @@ def player_choose_direction(player):
 def move_player(board, player, row, col):
     is_the_king_captured = False
 
-    if 0 <= row < SIZE and 0 <= col < SIZE:
-        if board[row][col] == 'K':
-            board[row][col] = player
-            is_the_king_captured = True
+    if board[row][col] == 'K':
+        board[row][col] = player
+        is_the_king_captured = True
 
-        elif board[row][col] == '_':
-            board[row][col] = player
-        else:
-            return 'Busy Position'
-
-        return is_the_king_captured  # Returns True when the player catch the King or False when he can't.
+    elif board[row][col] == '_':
+        board[row][col] = player
     else:
-        print('Invalid move. Stay on the board!')
+        return 'Busy Position'
+
+    return is_the_king_captured  # Returns True when the player catch the King or False when he can't.
 
 
 def set_next_row_and_column(sel_dir, o_row, o_col):
@@ -144,7 +141,3 @@ def main():
             board[king_row][king_col] = 'K'
     else:
         print('GAME OVER! The King is Saved!')
-
-
-if __name__ == "__main__":
-    main()
