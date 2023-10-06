@@ -141,3 +141,7 @@ def main():
             board[king_row][king_col] = 'K'
     else:
         print('GAME OVER! The King is Saved!')
+
+
+if __name__ == "__main__":
+    main()
