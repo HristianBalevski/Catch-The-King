@@ -1,5 +1,7 @@
 # Catch-The-King
-Catch The King is a game for two players(White and Black), and the main goal for every player is to catch the king before the other player. First player always starts from position (0, 0) and second player always starts from position (7, 7). The king always starts from random position but keep in mind that the king is very smart and on every 5th iteration he change his position. Every player has eight possible directions and can move only 1 square. The winner is the player who catch the king, if nobody catch the king until 20th iterations  the king wins the game.
+Catch The King is a two-player game involving White and Black participants. The primary objective for each player is to capture the king before their opponent does. The first player commences the game from position (0, 0), while the second player starts at position (7, 7). The king initiates the game from a randomly determined position, with the caveat that every fifth iteration prompts a change in the king's location.
+
+Each player has eight possible directions for movement, and they can advance by only one square in each move. The winner is the player who successfully captures the king. If neither player catches the king within the first 20 iterations, the king emerges victorious in the game.
 
 Possible directions:<br>
 Press 1 for Up <br>
